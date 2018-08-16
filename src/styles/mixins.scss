@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------------- */
+/* Transform */
+/* -------------------------------------------------------------------------- */
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform   : $value;
+  -ms-transform    : $value;
+  -o-transform     : $value;
+  transform        : $value;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Translate */
+/* -------------------------------------------------------------------------- */
+@mixin translate($value) {
+  -webkit-transform: translate($value);
+  -moz-transform:    translate($value);
+  -ms-transform:     translate($value);
+  -o-transform:      translate($value);
+  transform:         translate($value);
+}
+
+@mixin translateX($value) {
+  -webkit-transform: translateX($value);
+  -moz-transform:    translateX($value);
+  -ms-transform:     translateX($value);
+  -o-transform:      translateX($value);
+  transform:         translateX($value);
+}
+
+@mixin translateY($value) {
+  -webkit-transform: translateY($value);
+  -moz-transform:    translateY($value);
+  -ms-transform:     translateY($value);
+  -o-transform:      translateY($value);
+  transform:         translateY($value);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Vertically and horisontally center */
+/* -------------------------------------------------------------------------- */
+@mixin center($center-all) {
+  position: absolute;
+  @if $center-all == both {
+    top: 40%;
+    left: 50%;
+    @include transform(translate(-50%, -40%));
+  }
+  @else {
+    top: 40%;
+    @include transform(translateY(-40%));
+  }
+}

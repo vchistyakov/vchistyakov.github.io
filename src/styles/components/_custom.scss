@@ -1,0 +1,50 @@
+.ReactTable {
+  height: calc(100vh - 65px);
+  background: _palette(fg-light);
+  .rt-thead {
+    .rt-th {
+      background: _palette(fg);
+      height: 40px;
+      line-height: 30px;
+      color: _palette(bg);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  .-pagination {
+    select,
+    input {
+      height: 35px;
+      // border-radius: 0px;
+    }
+  }
+  .-filters {
+    height: 40px;
+
+    > .rt-tr {
+      height: 45px;
+      .rt-th {
+        height: 45px;
+        input {
+          height: 30px;
+          border-radius: 0px;
+          background-color: _palette(fg-bold);
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+table#details {
+  td {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+.details-header {
+  float: left;
+  word-spacing: 10px;
+  font-size: 24px;
+}

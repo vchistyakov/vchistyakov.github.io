@@ -1,0 +1,18 @@
+$palette: (
+  bg:					    #ffffff,
+  bg_header:      #1f2932,
+  fg:					    #444444,
+  fg-bold:			  #555555,
+  fg-light:			  #bbbbbb,
+  border:				  rgba(0,0,0,0.25),
+  border-bg:			rgba(0,0,0,0.075),
+  border-lt:			rgba(0,0,0,0.025),
+);
+
+$font: (
+  family:				  ('Roboto', sans-serif),
+  family-fixed:		('Courier New', monospace),
+  weight:				  300,
+  weight-bold:		500
+);
+

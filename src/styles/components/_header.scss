@@ -1,0 +1,16 @@
+.header {
+  background: _palette(bg_header);
+
+  .navbar-brand {
+    color: _palette(bg);
+  }
+
+  .custom-item-style {
+    .nav-link {
+      color: _palette(fg-light);
+      &:hover {
+        color: _palette(bg);
+      }
+    }
+  }
+}
